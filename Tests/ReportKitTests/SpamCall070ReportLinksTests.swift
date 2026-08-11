@@ -44,5 +44,6 @@ final class SpamCall070ReportLinksTests: XCTestCase {
         XCTAssertEqual(values["build"], "unknown")
         XCTAssertEqual(values["os"], "unknown")
         XCTAssertEqual(values["device"], "unknown")
+        XCTAssertEqual(values["diagnostics"], "unknown")
     }
 }

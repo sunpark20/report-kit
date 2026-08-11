@@ -35,7 +35,7 @@ public struct ReportTarget: Equatable, Sendable {
 
     private func limitedDiagnostics(_ diagnostics: String?) -> String? {
         guard let trimmed = diagnostics?.trimmingCharacters(in: .whitespacesAndNewlines),
-              !trimmed.isEmpty else { return nil }
+              !trimmed.isEmpty else { return "unknown" }
         return String(trimmed.prefix(200))
     }
 }
