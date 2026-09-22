@@ -2,11 +2,7 @@ import XCTest
 @testable import ReportKit
 
 final class GnomonReportLinksTests: XCTestCase {
-    private let target = ReportTarget(
-        appID: "gnomon",
-        displayName: "Gnomon",
-        template: "gnomon-bug.yml"
-    )
+    private let target = ReportTargets.gnomon
     private let metadata = ReportMetadata(
         version: "1.7.2 beta",
         build: "42",

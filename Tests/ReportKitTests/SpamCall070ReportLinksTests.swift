@@ -2,11 +2,7 @@ import XCTest
 @testable import ReportKit
 
 final class SpamCall070ReportLinksTests: XCTestCase {
-    private let target = ReportTarget(
-        appID: "spamcall070",
-        displayName: "SpamCall070",
-        template: "spamcall070-bug.yml"
-    )
+    private let target = ReportTargets.spamcall070
     private let metadata = ReportMetadata(
         version: "1.3 beta",
         build: "6",
